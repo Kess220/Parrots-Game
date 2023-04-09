@@ -48,8 +48,8 @@ function darCartas(numeroCartas) {
               <div data-test="card"  class="card frontal">
                   <img data-test="face-down-image" src='../images/back.png' />
               </div>
-              <div data-test="face-up-image"    class="card back">
-                  <img  src='${item.nome}' />
+              <div class="card back">
+                  <img data-test="face-up-image" src='${item.nome}' />
               </div>
             </div>`;
     })
