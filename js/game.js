@@ -44,7 +44,7 @@ function darCartas(numeroCartas) {
   let cards = document.querySelector(".cards");
   cards.innerHTML = leq
     .map((item) => {
-      return `<div class='card_container' onclick="flipCartd(this)">
+      return `<div class='card_container' data-test="card" onclick="flipCartd(this)">
               <div data-test="card"  class="card frontal">
                   <img data-test="face-down-image" src='../images/back.png' />
               </div>
@@ -118,7 +118,9 @@ function verificarCard() {
 
 async function fim() {
   clearInterval(cTempo);
-  alert(`Você ganhou em ${rounds} rounds!\nTempo: ${sec}`);
+  alert(
+    `Você ganhou em ${rounds} jogadas!\n A duração do jogo foi de ${sec} segundos!`
+  );
   const pergunta = await new Promise((resolve) => {
     const input = prompt("Reiniciar?\n sim ou não");
     resolve(input);

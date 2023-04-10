@@ -15,7 +15,7 @@ const handleSubmit = (event) => {
   event.preventDefault(); // prevent default
 
   localStorage.setItem("player", input.value);
-  window.location = "pages/index.html";
+  window.location = "index.html";
 };
 
 input.addEventListener("input", validacao);
