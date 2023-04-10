@@ -119,10 +119,12 @@ function verificarCard() {
 async function fim() {
   clearInterval(cTempo);
   alert(
-    `Você ganhou em ${rounds} jogadas! A duração do jogo foi de ${sec} segundos!`
+    `Você ganhou em ${rounds} jogadas!\n A duração do jogo foi de ${sec} segundos!`
   );
   const pergunta = await new Promise((resolve) => {
-    const input = prompt("Você gostaria de reiniciar a partida? (sim ou não)");
+    const input = prompt(
+      "Você gostaria de reiniciar a partida?\n (sim ou não)"
+    );
     resolve(input);
   });
 
