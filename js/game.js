@@ -45,7 +45,7 @@ function darCartas(numeroCartas) {
   cards.innerHTML = leq
     .map((item) => {
       return `<div class='card_container' data-test="card" onclick="flipCartd(this)">
-              <div data-test="card"  class="card frontal">
+              <div   class="card frontal">
                   <img data-test="face-down-image" src='../images/back.png' />
               </div>
               <div class="card back">
